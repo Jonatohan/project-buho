@@ -1,0 +1,153 @@
+<!DOCTYPE html lang= "en">
+
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css?family=Lobster">
+     <meta charset="utf-8">
+
+     <title>DRONE BUSINESS FORM</title>
+
+     <style>
+          * {
+               box-sizing: border-box;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+               scroll-behavior: smooth;
+               overflow: hidden;
+          }
+
+          body {
+               justify-content: center;
+               height: 100vh;
+               width: 100%;
+              
+
+          }
+
+
+          #form {
+               margin: 280px 17px 40px 1px;
+               justify-content: space-between;
+               border-color: aliceblue;
+
+          }
+
+          .data {
+               width: 280px;
+               padding: 8px;
+               margin-left: 300px;
+               height: fit-content;
+               width: fit-content;
+               align-items: center;
+
+          }
+
+          .box {
+               width: auto;
+               height: fit-content;
+               background-color: gray;
+               padding: 10px 10px 10px 0px;
+               border: 6px solid whitesmoke;
+               background-image: linear-gradient(150deg, orange, blue, #00ddff);
+          }
+
+          .fieldset {
+               width: fit-content;
+               padding: 10px;
+               margin-right: 180px;
+               margin-top: 75px;
+               margin-left: 180px;
+               border: 4px solid;
+               justify-content: center;
+          }
+
+          button {
+               border: 0;
+               background-image: linear-gradient(150deg, orange, blue, #00ddff);
+               border-radius: 8px;
+               color: #fff;
+               display: flex;
+               padding: 4px;
+               cursor: pointer;
+               transition: .3s;
+               margin-left: 360px;
+               margin-top: 20px;
+
+          }
+
+          button span {
+               background-color: #111;
+               padding: 16px 24px;
+               border-radius: 6px;
+               transition: .3s;
+          }
+
+          button:Hover span {
+               background: none;
+          }
+
+          button:active {
+               transform: scale(0.9)
+          }
+   
+     </style>
+</head>
+
+<body>
+
+     <div class="data">
+
+
+          <fieldset class="fieldset">
+               <legend><strong><span>Are You a:</span></strong> </legend>
+
+               <input type="radio" name="only" required> Realtor
+               <input type="radio" name="only" required> Property Manager
+               <input type="radio" name="only" required> Roofer
+               <input type="radio" name="only" required> Other
+
+          </fieldset>
+
+
+          <form id="form">
+               <div class="box">
+                    <input type="text" class="data" id="name" placeholder="First/Last name" required><br>
+
+
+                    <input type="email" class="data" id="email" placeholder="E-mail Adress" required> <br>
+
+
+                    <input type="phone number" id="phone" class="data" placeholder="Phone number" required><br>
+               </div>
+
+
+
+
+               <button type="submit" value="submit " class="send"><span>SEND</span></button>
+
+          </form>
+     </div>
+</body>
+
+<script>
+     var form = document.getElementById('form');
+
+     form.addEventListener('submit', function (event) {
+          event.preventDefault()
+          alert("Form is Submmited")
+
+          var name = document.getElementById('name').value
+          console.log(name);
+
+          var email = document.getElementById('email').value
+          console.log(email);
+
+          var phone = document.getElementById('phone').value
+          console.log(phone);
+     });
+
+
+
+</script>
+
+</html>

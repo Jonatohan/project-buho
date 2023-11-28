@@ -1,0 +1,300 @@
+* {
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+
+.container {
+     margin: 0 auto;
+     height: auto;
+     width: auto;
+     justify-content: space-between;
+}
+
+h1 {
+     text-align: center;
+     padding: 27px 0 27px 0;
+     font-weight: 1000;
+     font-size: 50px;
+     color: silver;
+     letter-spacing: 1px;
+     background: linear-gradient(90deg, rgb(0, 0, 0), rgb(245, 148, 3)50%, rgb(0, 0, 0));
+     box-shadow: 40px 0 10px 0;
+}
+
+h2 {
+     font-size: 40px;
+     font-family: 'Gill Sans';
+     font-weight: 1100px;
+     text-align: left;
+
+}
+
+div[id="head-img"] {
+     background-image: none;
+     background-color: black;
+     box-shadow: 10px 15px 15px 15px;
+     align-items: center;
+}
+
+img[id="drone1-img"] {
+     margin: 0 0 15px 200px;
+     height: 180px;
+     width: 180;
+     filter: blur(1px);
+     transform-origin: 50% 0%;
+     animation: drone-img 15s ease-in-out infinite;
+}
+
+img[id="buho-img"] {
+     border: solid 10px silver;
+     margin: 30px 0 10px 45px;
+     width: 650px;
+     height: fit-content;
+     box-shadow: 50px grey;
+
+}
+
+img[id="drone2-img"] {
+     height: 180px;
+     width: 180px;
+     margin: auto 0 15px 45px;
+     filter: blur(3px);
+     transform-origin: 50% 0%;
+     animation: drone2-img 15s ease-in-out infinite;
+}
+
+html,
+body {
+     background-image: url(https://soyacincau.com/wp-content/uploads/2022/11/221103-DJI-Mavic-3-Classic-feature.jpg);
+     overflow-x: hidden;
+     background-size: cover;
+
+}
+
+.nav a {
+     position: relative;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: medium;
+     color: black;
+     font-weight: bold;
+     width: 50%;
+     max-width: 250px;
+     height: 50px;
+     margin-left: 120px;
+     align-items: center;
+}
+.update{
+     margin-left:10px
+}
+hr {
+     height: 3px;
+     background-color: rgb(211, 146, 24);
+     border-color: rgb(211, 146, 24);
+}
+
+a {
+     color: rgb(235, 152, 10);
+     border-bottom: 2px;
+}
+
+
+
+.form {
+     text-align: left;
+}
+
+.label {
+     height: 20px;
+     font-style: italic;
+     text-align: left
+}
+
+div[id="form"] {
+     border-style: solid;
+     margin: 20px 1150px 10px 100px;
+     display: block;
+     display: inline-table;
+     padding-inline-start: 20px;
+     background-color: silver;
+     padding-bottom: 25px;
+     width: 50vw;
+     max-width: 290px;
+     min-width: 250px;
+     text-shadow: 15px;
+}
+
+.data {
+     margin: 10px 0 0 0;
+     width: 90%;
+     min-height: 2em;
+
+}
+
+fieldset[id="field"] {
+     margin: 10px 1059px 15px 15px;
+     background-color: orange;
+     border-radius: 15px;
+     border: solid;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+button {
+     border:0;background-image:linear-gradient(150deg, orange, blue, #00ddff);
+     border-radius: 8px;
+     color:#fff;
+     display:flex;
+     padding:4px;
+     cursor:pointer;
+     transition:.3s;
+     margin-left:150px;
+     margin-top:35px;
+     margin-bottom: 25px;
+
+}
+button span{
+background-color: #111;
+padding:16px 24px;
+border-radius:6px;
+transition:.3s;
+}
+button:Hover span {
+     background:none;
+}
+button:active{
+     transform:scale(0.9)
+}
+
+.image-container img {
+     position: absolute;
+     display: inline;
+     width: 430px;
+     height: 400px;
+     gap: 3px;
+     border-radius: 5px;
+     border-style: groove;
+     border-color: black;
+     filter: brightness(2px);
+     border-top-width: 50px;
+     box-shadow: 5px 5px 5px grey;
+     color: whitesmoke;
+
+}
+
+.image-container h2 {
+     position: absolute;
+     display: inline;
+     z-index: 1;
+     font-weight: bold;
+     border-bottom: solid orange;
+
+
+}
+
+img[id="construction"] {
+     margin: 0 0 400px 1030px
+}
+
+h2[id="cons"] {
+     margin: 0 0 400px 1200px
+}
+
+img[id="agriculture"] {
+     margin: 0 0 400px 550px
+}
+
+h2[id="agri"] {
+     margin: 0 0 400px 575px
+}
+
+img[id="construction"] {
+     margin: 0 20 400px 1000px
+}
+
+h2[id="cons"] {
+     margin: 0 0 400px 1050px
+}
+
+img[id="realestate"] {
+     margin: 0 0 100px 70px
+}
+
+h2[id="re"] {
+     margin: 0 0 100px 100px
+}
+
+.banner {
+     margin: 550px 0 0 250px
+}
+
+.grey {
+     color: rgb(8, 0, 0);
+}
+
+.figcaption {
+     position: inherit;
+     font-size: 19px;
+     font-weight: bold;
+     color: blanchedalmond
+}
+
+.backtop {
+     color: whitesmoke;
+     position: absolute;
+     text-decoration: none;
+     font-size: 20px;
+     margin-left: 450px
+}
+
+#agriculture:hover {
+     transform: scale(1.1)
+}
+
+#construction:hover {
+     transform: scale(1.1)
+}
+
+#realestate:hover {
+     transform: scale(1.1)
+}
+
+.buttoncolor:hover {
+     animation-name: color;
+     animation-duration: 900ms;
+     animation-fill-mode: forwards;
+     animation-duration: 1s;
+
+}
+
+@keyframes color {
+
+     100% {
+          color: coral
+     }
+}
+
+@keyframes drone-img {
+     0% {
+          transform: rotate(0deg);
+     }
+
+     50% {
+          transform: rotate(360deg);
+     }
+}
+
+@keyframes drone2-img {
+     0% {
+          transform: rotate(0deg);
+     }
+
+     50% {
+          transform: rotate(-360deg);
+     }
+}
+
+@keyframes twinkle {
+     50% {
+          transform: scale(0.5);
+          opacity: 0.5;
+     }
+}
